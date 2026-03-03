@@ -142,7 +142,6 @@ main {
   border: 4px solid rgba(59, 130, 246, 0.3);
   position: relative;
   z-index: 10;
-  transform: rotate(270deg);
 }
 
 .hero-title {
@@ -876,6 +875,15 @@ section {
 }
 
 /* Responsive */
+
+/* @media (min-width: ){} */
+
+@media (max-width: 700px) {
+  .contact-info-wrapper {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 768px) {
   .hero-title {
     font-size: 4.5rem;
