@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amilton Alves - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="background-decorations">
+        <div class="bg-blob bg-blob-1"></div>
+        <div class="bg-blob bg-blob-2"></div>
+        <div class="bg-blob bg-blob-3"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="grid-pattern"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Profile Image -->
+                    <div class="profile-image-wrapper animate-on-scroll">
+                        <div class="profile-glow"></div>
+                        <img src="./imgs/foto-braco-2.png" alt="Desenvolvedor Front-End" class="profile-image">
+                    </div>
+
+                    <!-- Name and Title -->
+                    <h1 class="hero-title animate-on-scroll">Amilton Alves </h1>
+                    <h2 class="hero-subtitle animate-on-scroll">Desenvolvedor Web</h2>
+                    <p class="hero-description animate-on-scroll">
+                        Desenvolvendo aplicações web funcionais que resolvem problemas reais com organização, clareza e
+                        performance
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons animate-on-scroll">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">Ver Projetos</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contato</button>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links animate-on-scroll">
+                        <a href="https://github.com/AmiltonDev20" target="_blank" rel="noopener noreferrer"
+                            class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amilton-alves-8b09b7267/" target="_blank"
+                            rel="noopener noreferrer" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card animate-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="glass-card">
+                            <div class="card-header">
+                                <div class="card-icon gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4.5 16.5c-1.5 1.41-1.5 3.69 0 5.1s3.69 1.5 5.1 0l3.9-3.9c1.41-1.5 1.41-3.69 0-5.1-.17-.18-.36-.33-.56-.47m-12.53 3.97c-1.5-1.41-1.5-3.69 0-5.1s3.69-1.5 5.1 0l3.9 3.9c1.41 1.5 1.41 3.69 0 5.1-.17.18-.36.33-.56.47">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3>Minha Jornada</h3>
+                            </div>
+                            <p>Minha trajetória na programação começou com o desejo de entender como sistemas e
+                                interfaces são construídos. O que iniciou com páginas estáticas em HTML e CSS evoluiu
+                                para o desenvolvimento de aplicações interativas em JavaScript, sempre com foco em
+                                resolver problemas reais por meio da tecnologia. Atualmente, estou direcionando minha
+                                formação para o desenvolvimento Full Stack, aprofundando meus estudos em React,
+                                TypeScript e Node.js para construir soluções mais completas, organizadas e escaláveis.
+                            </p>
+                            <p>Hoje, tenho como base o JavaScript moderno e priorizo boas práticas, organização de
+                                código e evolução constante como desenvolvedor, buscando criar aplicações funcionais e
+                                bem estruturadas</p>
+                        </div>
+                    </div>
+
+                    <div class="about-card animate-on-scroll">
+                        <div class="card-glow"></div>
+                        <div class="glass-card">
+                            <div class="card-header">
+                                <div class="card-icon gradient-purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3>Minha Abordagem</h3>
+                            </div>
+                            <p>Minha abordagem no desenvolvimento é centrada na clareza e na funcionalidade. Antes de
+                                escrever código, busco entender o problema e estruturar a solução da forma mais simples
+                                e eficiente possível. Valorizo organização, boas práticas e a construção de aplicações
+                                que realmente resolvam necessidades reais, sempre pensando na experiência do usuário e
+                                na escalabilidade do projeto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technologies Grid -->
+                <div class="technologies-section animate-on-scroll">
+                    <h3 class="technologies-title">Principais Tecnologias</h3>
+                    <div class="technologies-grid">
+                        <div class="tech-card animate-on-scroll" style="--delay: 0">
+                            <div class="tech-glow gradient-orange"></div>
+                            <div class="tech-content">
+                                <div class="tech-icon gradient-orange">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                        </div>
+                        <div class="tech-card animate-on-scroll" style="--delay: 0.1s">
+                            <div class="tech-glow gradient-blue"></div>
+                            <div class="tech-content">
+                                <div class="tech-icon gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                        <div class="tech-card animate-on-scroll" style="--delay: 0.2s">
+                            <div class="tech-glow gradient-yellow"></div>
+                            <div class="tech-content">
+                                <div class="tech-icon gradient-yellow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="tech-card animate-on-scroll" style="--delay: 0.3s">
+                            <div class="tech-glow gradient-cyan"></div>
+                            <div class="tech-content">
+                                <div class="tech-icon gradient-cyan">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="tech-card animate-on-scroll" style="--delay: 0.4s">
+                            <div class="tech-glow gradient-pink"></div>
+                            <div class="tech-content">
+                                <div class="tech-icon gradient-pink">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Git/GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1748609278627-4b0e483b9b70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc3MjQyNzUzM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+                                    alt="Dashboard Analytics">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Sistema de Gestão para Oficinas</h3>
+                                <p>Sistema para digitalização de orçamentos automotivos, com cadastro de veículos, geração de PDF e organização de atendimentos, trazendo mais agilidade e controle para oficinas mecânicas.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">localStorage</span>
+                                    <span class="tag">js.PDF</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-primary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Em desenvolvimento
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                        Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1691073112675-9685bc6779bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNwb25zaXZlJTIwd2ViJTIwYXBwbGljYXRpb258ZW58MXx8fHwxNzcyNDY3MDI4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                                    alt="Aplicação Responsiva">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Plataforma para Aulas de Percussão</h3>
+                                <p>Plataforma criada para apresentar as aulas de atabaque, organizar informações do curso e facilitar o contato e agendamento de novos alunos de forma simples e acessível.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Responsividade</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-primary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Em desenvolvimento
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                        Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-glow"></div>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1768987439382-894ea4e2a736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBwbGF0Zm9ybSUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzI0MDA3ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                                    alt="E-commerce Platform">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Catálogo Digital – Loja de Prata</h3>
+                                <p>Catálogo digital desenvolvido para organizar e exibir produtos de uma loja de acessórios em prata, com filtros dinâmicos e integração facilitada para atendimento via WhatsApp.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">JSON</span>
+                                    <span class="tag">localStorage</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="btn btn-primary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Em desenvolvimento
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg>
+                                        Código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Hard Skills -->
+                    <div class="skills-column animate-on-scroll">
+                        <div class="skills-card-glow"></div>
+                        <div class="glass-card">
+                            <div class="skills-header">
+                                <div class="card-icon gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>Hard Skills</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>HTML5 & CSS3</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>JavaScript (ES6+)</span>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-header">
+                                    <span>Git & GitHub</span>
+                                    <span class="skill-percentage">83%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="--skill-level: 83%"></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Responsive Design</span>
+                                        <span class="skill-percentage">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Tailwind CSS</span>
+                                        <span class="skill-percentage">50%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>React</span>
+                                        <span class="skill-percentage">20%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 20%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>TypeScript</span>
+                                        <span class="skill-percentage">17%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 17%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>Node.JS</span>
+                                        <span class="skill-percentage">17%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="--skill-level: 17%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skills-column animate-on-scroll">
+                        <div class="skills-card-glow"></div>
+                        <div class="glass-card">
+                            <div class="skills-header">
+                                <div class="card-icon gradient-purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3>Soft Skills</h3>
+                            </div>
+                            <div class="soft-skills-list">
+                                <div class="soft-skill-item">
+                                    <div class="soft-skill-icon gradient-yellow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Criatividade</h4>
+                                        <p>Soluções inovadoras e design thinking aplicado</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill-item">
+                                    <div class="soft-skill-icon gradient-cyan">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Trabalho em Equipe</h4>
+                                        <p>Colaboração efetiva e comunicação clara</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill-item">
+                                    <div class="soft-skill-icon gradient-pink">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Proatividade</h4>
+                                        <p>Iniciativa e busca constante por melhorias</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill-item">
+                                    <div class="soft-skill-icon gradient-green">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Resolução de Problemas</h4>
+                                        <p>Análise crítica e soluções eficientes</p>
+                                    </div>
+                                </div>
+                                <div class="soft-skill-item">
+                                    <div class="soft-skill-icon gradient-blue">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="3" width="7" height="7"></rect>
+                                            <rect x="14" y="14" width="7" height="7"></rect>
+                                            <rect x="3" y="14" width="7" height="7"></rect>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4>Organização</h4>
+                                        <p>Planejamento estruturado e atenção aos detalhes no desenvolvimento.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">Tem um projeto em mente? Vamos conversar e criar algo incrível
+                        juntos!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+
+
+                    <!-- Contact Info & Social -->
+                    <div class="contact-info-wrapper animate-on-scroll">
+                        <!-- Contact Info -->
+                        <div class="contact-info-card">
+                            <div class="info-card-glow"></div>
+                            <div class="glass-card">
+                                <h3>Informações de Contato</h3>
+                                <div class="contact-info-list">
+                                    <div class="contact-info-item">
+                                        <div class="info-icon gradient-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="info-label">Email</p>
+                                            <p class="info-value">amiltondev20@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="info-icon gradient-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="info-label">Telefone</p>
+                                            <p class="info-value">+55 (11) 99164-5063</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-item">
+                                        <div class="info-icon gradient-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="info-label">Localização</p>
+                                            <p class="info-value">São Paulo, Brasil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-info-card">
+                            <div class="social-card-glow"></div>
+                            <div class="glass-card">
+                                <h3>Redes Sociais</h3>
+                                <div class="social-info-list">
+                                    <a href="https://github.com/AmiltonDev20" target="_blank" rel="noopener noreferrer"
+                                        class="social-info-item">
+                                        <div class="social-info-icon gradient-gray">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="social-name">GitHub</p>
+                                            <p class="social-handle">@AmiltonDev20</p>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/amilton-alves-junior/" target="_blank"
+                                        rel="noopener noreferrer" class="social-info-item">
+                                        <div class="social-info-icon gradient-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                                </path>
+                                                <rect x="2" y="9" width="4" height="12"></rect>
+                                                <circle cx="4" cy="4" r="2"></circle>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="social-name">LinkedIn</p>
+                                            <p class="social-handle">/in/amilton-alves-junior</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Desenvolvedor Front-End. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
